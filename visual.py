@@ -67,12 +67,12 @@ print("Graph Loadeds")
 
 
 
-class MyFirstGUI:
+class GUI:
 	def __init__(self, master):
 		self.master = master
-		master.title("A simple GUI")
+		master.title("GUI")
 
-		self.label = Label(master, text="Select Some Images!!")
+		self.label = Label(master, text="Select Some Images!")
 		self.label.pack()
 
 		self.greet_button = Button(master, text="Open Files", command=self.files)
@@ -98,6 +98,6 @@ class MyFirstGUI:
 			img.show()
 
 root = Tk()
-my_gui = MyFirstGUI(root)
+gui = GUI(root)
 root.mainloop()
 
